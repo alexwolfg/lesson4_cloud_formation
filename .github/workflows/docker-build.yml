@@ -35,4 +35,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: alewolfg/python-helloworld/python-helloworld:latest
+          tags: alewolfg/python-helloworld:latest
