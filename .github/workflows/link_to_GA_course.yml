@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Repo composite
     steps:
-      - uses: alexwolfg/github_actions_lesson1@main
+      - uses: alexwolfg/github_actions_lesson1/.github/workflows/Lesson3_exer1.yaml@main
         with:
           ACTOR: ${{ inputs.actor }}
     
