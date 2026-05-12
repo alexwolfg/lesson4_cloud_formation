@@ -7,8 +7,12 @@ on:
       - main
 jobs:
   composite_test:
-    name: Repo composite
-    uses: alexwolfg/github_actions_lesson1/.github/workflows/Lesson3_exer1.yml@main
-    with:
-      ACTOR: ${{ github.actor }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+  
+    - name: Use composite action
+      uses: alexwolfg/yaml_overview.yaml@main
+      with:
+        actor: ${{ github.actor }}
     
