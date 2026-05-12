@@ -8,7 +8,7 @@ on:
 jobs:
   composite_test:
     name: Repo composite
-    uses: alexwolfg/github_actions_lesson1/.github/workflows/Lesson3_exer1.yaml@main
+    uses: alexwolfg/github_actions_lesson1/.github/workflows/Lesson3_exer1.yml@main
     with:
       ACTOR: ${{ github.actor }}
     
