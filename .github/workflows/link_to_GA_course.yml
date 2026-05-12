@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v4
   
     - name: Use composite action
-      uses: alexwolfg/yaml_overview.yaml@main
+      uses: alexwolfg/github_actions_lesson1/yaml_overview.yaml@main
       with:
         actor: ${{ github.actor }}
     
