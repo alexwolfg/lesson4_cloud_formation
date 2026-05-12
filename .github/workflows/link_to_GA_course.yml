@@ -1,0 +1,16 @@
+name: "Test"
+
+on:
+  workflow_dispatch: 
+  push:
+    branches:
+      - main
+jobs:
+  composite_test:
+    runs-on: ubuntu-latest
+    name: Repo composite
+    steps:
+      - uses: alexwolfg/github_actions_lesson1@main
+        with:
+          ACTOR: ${{ inputs.actor }}
+    
