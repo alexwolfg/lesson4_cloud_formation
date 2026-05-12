@@ -7,12 +7,7 @@ on:
       - main
 jobs:
   composite_test:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
-  
-    - name: Use composite action
-      uses: alexwolfg/github_actions_lesson1/yaml_overview.yaml@main
-      with:
-        actor: ${{ github.actor }}
+    uses: alexwolfg/github_actions_lesson1/.github/workflows/Lesson3_exer1.yaml@main
+    with:
+      actor: ${{ github.actor }}
     
