@@ -7,10 +7,8 @@ on:
       - main
 jobs:
   composite_test:
-    runs-on: ubuntu-latest
     name: Repo composite
-    steps:
-      - uses: alexwolfg/github_actions_lesson1/.github/workflows/Lesson3_exer1.yaml@main
-        with:
-          ACTOR: ${{ inputs.actor }}
+    uses: alexwolfg/github_actions_lesson1/.github/workflows/Lesson3_exer1.yaml@main
+    with:
+      ACTOR: ${{ github.actor }}
     
